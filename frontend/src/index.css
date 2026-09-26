@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 { font-size: 1.6rem; margin-bottom: 4px; }
+.subtitulo { color: #666; margin-top: 0; margin-bottom: 24px; }
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #e2e4e9;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab.activa {
+  background: #2f5fed;
+  color: white;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.disponible { background: #d7f5df; color: #147a3a; }
+.badge.prestado { background: #ffe3d1; color: #b8500f; }
+.badge.activo { background: #d7ecff; color: #0b5fad; }
+.badge.vencido { background: #ffd6d6; color: #b71c1c; }
+.badge.devuelto { background: #e5e5e5; color: #555; }
+
+select, button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d3da;
+  font-size: 0.9rem;
+}
+
+button.primario {
+  background: #2f5fed;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.primario:disabled {
+  background: #a9b8f5;
+  cursor: not-allowed;
+}
+
+.formulario {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.error {
+  background: #ffe3e3;
+  color: #b71c1c;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
